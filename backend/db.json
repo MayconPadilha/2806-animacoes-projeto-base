@@ -34,13 +34,6 @@
       "statusFinalizado": false,
       "categoria": "Estudos",
       "prioridade": "Alta"
-    },
-    {
-      "id": 7,
-      "descricao": "asdasd",
-      "statusFinalizado": false,
-      "categoria": "Casa",
-      "prioridade": "Alta"
     }
   ]
 }
