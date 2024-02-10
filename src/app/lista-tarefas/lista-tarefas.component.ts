@@ -7,7 +7,10 @@ import { Tarefa } from '../interface/tarefa';
 import {
   checkButtonTrigger,
   filterTrigger,
+  flyInOutTrigger,
+  formButtonTrigger,
   highlightedStateTrigger,
+  shakeTrigger,
   shownStateTrigger,
 } from '../animations';
 
@@ -15,7 +18,7 @@ import {
   selector: 'app-lista-tarefas',
   templateUrl: './lista-tarefas.component.html',
   styleUrls: ['./lista-tarefas.component.css'],
-  animations: [highlightedStateTrigger, shownStateTrigger, checkButtonTrigger, filterTrigger],
+  animations: [highlightedStateTrigger, shownStateTrigger, checkButtonTrigger, filterTrigger, formButtonTrigger, flyInOutTrigger, shakeTrigger ],
   // animations: [trigger('highlightedState',[
   //   state('default', style({
   //     border: '2px solid #B2B6FF'
