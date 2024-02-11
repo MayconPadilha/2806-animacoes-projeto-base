@@ -54,9 +54,10 @@ export const shownStateTrigger = trigger('shownState', [
 ])
 
 export const checkButtonTrigger = trigger('checkButton', [
-  transition('* => unchecked',[
+  transition('* => checked',[
     animate('400ms ease-in', style({
-      transforme: 'scale(0.4)'
+      transform: 'scale(0.4)',
+      backgound: 'red'
     }))
   ])
 ])
