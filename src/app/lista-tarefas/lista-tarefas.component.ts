@@ -9,6 +9,7 @@ import {
   flyInOutTrigger,
   formButtonTrigger,
   highlightedStateTrigger,
+  listStateTrigger,
   shakeTrigger,
   shownStateTrigger,
 } from '../animations';
@@ -18,7 +19,7 @@ import { Subscription } from 'rxjs';
   selector: 'app-lista-tarefas',
   templateUrl: './lista-tarefas.component.html',
   styleUrls: ['./lista-tarefas.component.css'],
-  animations: [highlightedStateTrigger, shownStateTrigger, checkButtonTrigger, filterTrigger, formButtonTrigger, flyInOutTrigger, shakeTrigger ],
+  animations: [highlightedStateTrigger, shownStateTrigger, checkButtonTrigger, filterTrigger, formButtonTrigger, flyInOutTrigger, shakeTrigger, listStateTrigger],
   // animations: [trigger('highlightedState',[
   //   state('default', style({
   //     border: '2px solid #B2B6FF'
@@ -109,9 +110,9 @@ export class ListaTarefasComponent implements OnInit {
     }
   }
 
-  excluirTarefa(tarefa: Tarefa) {
-    if (tarefa.id) {
-      this.service.excluir(tarefa.id)
+  excluirTarefa(id: number): void {
+    if (id) {
+      this.service.excluir(id)
     }
   }
 
